@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'MyCustomFont'; /* Give your font a custom name */
+  src: url('fonts/myfont.ttf') format('truetype'); /* Path to your file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: ;
+}
