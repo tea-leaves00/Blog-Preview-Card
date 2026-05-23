@@ -1,10 +1,105 @@
 @font-face {
-  font-family: 'MyCustomFont'; /* Give your font a custom name */
-  src: url('fonts/myfont.ttf') format('truetype'); /* Path to your file */
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Figtree";
+  src: url("assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 300 900;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: ;
+  min-height: 100vh;
+  font-family: "Figtree", sans-serif;
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 384px;
+  background-color: white;
+  border: 1px solid hsl(0, 0%, 7%);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 8px 8px 0 hsl(0, 0%, 7%);
+}
+
+.card > img {
+  width: 100;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.category {
+  display: inline-block;
+  background-color: hsl(47, 88%, 63%);
+  color: hsl(0, 0%, 7%);
+  font-size: 14px;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.publish-date {
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(0, 0%, 7%);
+  margin: 6px 0px 12px 0px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin: 0 0 12px;
+  color: hsl(0, 0%, 7%);
+}
+
+h1:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: hsl(0, 0%, 42%);
+  margin: 0 0 24px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.author img {
+  width: 32px;
+  height: 32px;
+}
+
+.author-name {
+  font-size: 14px;
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+}
+
+@media (max-width: 430px) {
+  .card {
+    width: 327px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
 }
