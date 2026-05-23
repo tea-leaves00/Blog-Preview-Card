@@ -1,2 +1,0 @@
--why the ./ for hrefs
--why the intial max size 
